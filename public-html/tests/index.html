@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "estyle.css">
+    <title>Caixa de Texto</title>
+
+    <style>
+        
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    background-color: #BA8775;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 3rem;
+    flex-direction: column;
+}
+
+.box {
+    background-color: #f7edcb;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    border: 8px solid #e4a500;
+    position: relative;
+    border-radius: 5%;
+    box-shadow: 20px 20px #000000;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    flex-direction: column;
+}
+
+h1 {
+    align-items: center;
+    font-size: 24px;
+    color: #e4a500;
+    margin: 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Kanit", sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+/*caixa atenção*/
+.atencao {
+    background-color: #ffd2b6;
+    width: 280px;
+    height: 4300px;
+    padding: 20px;
+    border: 8px solid #E94F0E;
+    position: relative;
+    border-radius: 5%;
+    box-shadow: 20px 20px #000000;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    flex-direction: column;
+}
+
+.title {
+    align-items: center;
+    font-size: 24px;
+    color: #E94F0E;
+    margin: 0 0 15px;
+}
+
+.txt{
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+}
+img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+ 
+}
+
+/*Curiosidade*/
+.curiosidade {
+    background-color: #D0E6EC;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    border: 8px solid #56A7B2;
+    position: relative;
+    border-radius: 5%;
+    box-shadow: 20px 20px #000000;
+    padding: 3rem;
+    flex-direction: column;
+}
+
+.titulo_curiosidade {
+    align-items: center;
+    font-size: 24px;
+    color: #56A7B2;
+    margin: 0 0 15px;
+}
+
+.txt_curiosidade{
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+}
+/*caixa de vídeo*/
+.video-box {
+    background-color: #E4FFE1;
+    border-radius: 5%;
+    border: 8px solid #46AC33;
+    width: 580px;
+    padding: 20px;
+    box-shadow: 20px 20px #000000;
+}
+.header {
+    background-color: #46AC33;
+    color: white;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+    font-weight: bold;
+}
+.content {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.content p {
+    margin: 0;
+    padding: 5px;
+    color: #000000;
+}
+.h3{
+    margin: 0;
+    padding: 5px;
+    color: #2A7050;
+}
+.video-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.video-link iframe {
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+.youtube-link {
+    text-align: center;
+    margin-top: 10px;
+}
+.youtube-link a {
+    color: #46AC33;
+    text-decoration: none;
+    font-weight: bold;
+}
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+    <h1>Fique atento!</h1>
+    <p>Você consegue imaginar o quão diferente é uma interface que é desenvolvida a partir de processos de UX com outra que não é? IHC é resultado da soma de esforços entre dois mundos: cientistas da computação, que desenvolvem sistemas, linguagens e arquiteturas, e psicólogos, envolvidos no projeto de interface, informam o cientista a respeito das capacidades humanas (REBELO, 2009).</p>
+</div>
+
+
+
+<div class="atencao">
+    <h1 class="title">
+        <img src="importante_icon.png" alt="ícone de alerta">
+        Atenção!
+        <img src="importante_icon.png" alt="de alerta">
+    </h1>
+    <p class="txt">Como já foi bastante apresentado, a experiência do usuário é uma disciplina multidisciplinar que surgiu a partir da junção de muitas áreas de estudo. Hoje o foco do design UX aplicado está em interfaces computacionais, mas em breve acompanhará a evolução das interfaces que irão existir em muitos objetos ao nosso redor e não somente em telas. Por isso, a área de UX continua muito próxima da ciência, pois necessita buscar novas respostas para acompanhar a evolução das interfaces.</p>
+</div>
+ <br> <br>
+<div class="curiosidade">
+    <h1 class="titulo_curiosidade">
+Curiosidade        <img src="search.png" alt="curiosidade_img">
+    </h1>
+    <p class="txt_curiosidade"> Você consegue imaginar o quão diferente é uma interface que é desenvolvida a partir de processos de UX com outra que não é? IHC é resultado da soma de esforços entre dois mundos: cientistas da computação, que desenvolvem sistemas, linguagens e arquiteturas, e psicólogos, envolvidos no projeto de interface, informam o cientista a respeito das capacidades humanas (REBELO, 2009).</p>
+</div>
+<br>
+<br>
+</div>
+<div class="video-box">
+    <div class="header">
+        Aprendendo assistindo...</div>
+    <div class="video-link">
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/NuvN03WzCB4?si=UDBzTkc9eDOvYx7i" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+    </div>
+    <div class="content">
+        <h3>Interação Humano Computador (IHC)</h3>
+        <p>Em resumo, a Interação Humano-Computador é um campo vasto e dinâmico, moldando a forma como nos relacionamos com a tecnologia. Se você gostou do assunto, clica no vídeo para entender melhor sobre o assunto.</p>
+    </div>
+    <div class="youtube-link">
+        <a href="https://youtu.be/NuvN03WzCB4" target="_blank">Assista no YouTube</a>
+    </div>
+</div>
+<br> .<br>. <br>.
+</body>
+</html>

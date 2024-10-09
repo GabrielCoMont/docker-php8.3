@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: web
+    restart: always
+    volumes:
+      - ./public-html:/var/www/html/
+    ports:
+      - "10000:80"
+    command: >
+      bash -c "chown -R www-data:www-data /var/www/html/ &&
+                chmod -R 777 /var/www/html/ &&
+                apachectl -D FOREGROUND"
+
+  db:
+    container_name: db
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_DB: moodle
+      POSTGRES_USER: moodleuser
+      POSTGRES_PASSWORD: moodlepass
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "1050:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "moodleuser"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata: {}

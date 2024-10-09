@@ -1,0 +1,542 @@
+/* RESPONSIVIDADE DAS TELAS */
+
+/* @media screen and (max-width:900px){
+
+#section3 p{
+  padding-left: 10%;
+}
+
+} */
+
+/* começo da tela 1001px para 834px: LANDSCAPE TAB */
+@media screen and (max-width: 1001px) and (min-width: 834px) {
+    /* Modificações de ultima hora */
+    .button-txt{
+      display: none;
+    }
+  
+    #btn-pomodoro {
+      width: 39px !important;
+    }
+  
+    #inicio {
+      padding-top: 1rem;
+    }
+  
+    /* fim das modificações  */
+  
+    /* HEADER */
+    #header-apresentacao {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #logo1 {
+      width: 25%;
+      height: auto;
+    }
+  
+    /* #inicio {
+  
+  } */
+  
+    .img-principal {
+      width: 100%;
+      height: auto;
+    }
+  
+    #section1 h2,
+    h1 {
+      padding: 0rem;
+      margin: 0rem;
+    }
+  
+    #section1 h2 {
+      font-size: 1.8em;
+    }
+  
+    #section1 h1 {
+      font-size: 2.9em;
+    }
+  
+    #text {
+      margin-bottom: 20%;
+    }
+  
+    #circles2 {
+      margin: 10%s;
+    }
+  
+    #section1 {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #btn-comecar {
+      font-size: 1.5rem;
+    }
+    /* fim do inicio */
+  
+    /* section dois */
+    #section2 h2 {
+      font-size: 1.8em;
+    }
+  
+    .png-all_objectives {
+      width: 40%;
+    }
+  
+    #all-objectives h3 {
+      font-size: 1.6em;
+    }
+  
+    #all-objectives {
+      display: grid;
+      margin: 0 1rem;
+      grid-template-columns: repeat(3, 2fr);
+      gap: 10%;
+    }
+    /* fim da section dois */
+  
+    /* Footer */
+    #section3 {
+      margin: 10% 0% 0% 0%;
+      display: flex;
+    }
+    #section3 h2 {
+      font-size: 1.8rem;
+      margin: 0.8rem 0rem 0rem 4rem;
+    }
+  
+    #section3 p {
+      padding: 3% 46% 6% 3%;
+      width: 100%;
+      font-size: 1.5em;
+    }
+  
+    #section3 p > a {
+      font-size: 1.2em;
+    }
+  
+    #teacher {
+      margin: 1% 1% 0% 55%;
+      width: 38%;
+      padding-top: 10%;
+    }
+  
+    .button-footer {
+      margin: 0% 0% 26% 0%;
+      font-size: 1.4rem;
+    }
+    /* fim do Footer */
+  }
+  
+  /* fim da tela  *
+  
+  /* começo da tela 833px para 768px PORTRAIT TAB - PEDRO */
+  @media screen and (max-width: 833px) and (min-width: 768px) {
+    /* header apresentação */
+    #header-apresentacao {
+      display: flex;
+      justify-content: center;
+      margin: 1% 0px;
+    }
+  
+    #logo1 {
+      margin: 0;
+      width: 20%;
+      height: auto;
+    }
+  
+    #inicio {
+      display: flex;
+      flex-direction: column;
+      padding-top: 0rem;
+    }
+  
+    #section1 {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  
+    #circles2 {
+      width: 10%;
+      margin: 5% 0% 8% 46%;
+    }
+  
+    #btn-comecar {
+      font-size: 1.6em;
+      margin: 20% 0px;
+    }
+  
+    /* #text{
+  
+        } */
+  
+    #text h2 {
+      font-size: 2.3em;
+      margin: 0;
+    }
+  
+    #text h1 {
+      font-size: 3.5em;
+      margin: 0;
+    }
+  
+    /* aside inicio */
+  
+    .img-principal {
+      width: 500px;
+    }
+    /* fim aside */
+  
+    /* fim header */
+  
+    /* inicio do section2  */
+    #section2 h2 {
+      font-size: 2em;
+      padding-bottom: 5%;
+      padding-top: 0%;
+    }
+    #all-objectives {
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      gap: 4%;
+    }
+    #all-objectives img {
+      width: 59%;
+    }
+    #all-objectives h3 {
+      font-size: 1.6em;
+    }
+  
+    /* fim do section2 */
+  
+    /* section3 inicio */
+    #section3 p {
+      font-size: 1.6em;
+      padding: 4% 35% 4% 4%;
+      width: 100%;
+      margin: 3rem 2rem 2rem 2rem;
+    }
+  
+    #section3 h2 {
+      margin: 1.8rem 0rem 0rem 6rem;
+      font-size: 167%;
+    }
+  
+    #section3 {
+      margin: 3% 0% 0% 0%;
+    }
+  
+    #teacher {
+      width: 40%;
+      margin: 13% 0% 0% 57%;
+    }
+  
+    .button-footer {
+      font-size: 1.6em;
+      margin-bottom: 30%;
+    }
+  
+    /* fim section3 */
+  }
+  /* fim da tela  */
+  
+  /* começo da tela 767px para 412px IPAD/SMARTPHONE */
+  @media screen and (max-width: 767px) and (min-width: 412px) {
+    /* HEADER   */
+    #header-apresentacao {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    #logo1 {
+      width: 34%;
+      height: auto;
+      margin: 0px;
+    }
+    /* Fim do header */
+  
+    /* PRINCIPAL */
+    #inicio {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-top: 0rem;
+    }
+    #section1 h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 1.7rem;
+      margin: 0%;
+    }
+    #btn-comecar {
+      font-size: 1.5rem;
+    }
+  
+    #section1 {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+    #circles2 {
+      margin: 1rem 0 2.25rem 12.8rem;
+      width: 25%;
+    }
+    .img-principal {
+      width: 400px;
+      margin-top: 30px;
+      padding-bottom: 40px;
+      margin-left: 10px;
+    }
+    /* Final principal */
+  
+    /* SEÇÃO DOIS */
+    #section2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .png-all_objectives {
+      width: 32%;
+    }
+    #all-objectives {
+      display: grid;
+      margin: 0 2rem;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 5%;
+    }
+    #all-objectives p {
+      font-size: 22px;
+      padding: 0%;
+    }
+    #all-objectives h3 {
+      font-size: 28px;
+      padding: 0%;
+    }
+    #section2 h2 {
+      padding: 0%;
+    }
+    /* FIM DA SEÇÃO DOIS */
+  
+    /* Footer */
+    #section3 {
+      display: flex;
+      justify-items: center;
+    }
+    .png-footer {
+      width: 100%;
+      display: none;
+    }
+    #section3 p {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: rgb(160, 195, 179, 0.52);
+      padding: 4% 0% 4% 0%;
+      margin: 2.8rem 0rem 2rem 0rem;
+      border-radius: 0.53em;
+    }
+  }
+  /* Fim do Footer */
+  
+  @media screen and (max-width: 550px) and (min-width: 466px) {
+    #all-objectives img {
+      width: 49%;
+      height: auto;
+    }
+  }
+  
+  /* fim da tela  */
+  
+  @media screen and (max-width: 465px) and (min-width: 412px) {
+    #inicio {
+      padding-top: 0rem;
+    }
+  
+    #section3 {
+      display: flex;
+      justify-content: center;
+    }
+    #section3 h2 {
+      margin: 1rem;
+    }
+  
+    #all-objectives {
+      gap: 4%;
+    }
+  
+    #all-objectives img {
+      width: 47%;
+      height: auto;
+    }
+  }
+  
+  /* Começo da tela 411px para 300px  FIRST GEN*/
+  
+  @media screen and (max-width: 411px) and (min-width: 300px) {
+    /* header */
+  
+    #inicio {
+      padding-top: 0rem;
+    }
+  
+    #header-apresentacao {
+      display: flex;
+      justify-content: center;
+      margin: 0% 10% 0% 0%;
+      padding: 0%;
+    }
+  
+    #logo1 {
+      width: 34%;
+      height: auto;
+    }
+    /* .objective{
+    
+  }
+     /* fim header*/
+  
+    /* section inicio */
+  
+    #inicio {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #section1 {
+      margin: 0% 0% 5% 0%;
+    }
+  
+    #text {
+      margin: 0%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #section1 h2 {
+      font-size: 1.3em;
+      margin: 0%;
+    }
+    #section1 h3 {
+      margin: 0%;
+      font-size: 1.1em;
+    }
+    #section1 h1 {
+      font-size: 2em;
+      margin: 0%;
+      text-align: center;
+    }
+  
+    #div-informacoes {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #circles2 {
+      margin-bottom: 9.9%;
+    }
+  
+    picture {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .img-principal {
+      width: 90%;
+      height: auto;
+    }
+  
+    #btn-comecar {
+      margin: 4%;
+    }
+  
+    /* fim inicio section */
+  
+    /* Inicio da section2 */
+    #all-objectives {
+      display: grid;
+      margin: 0 2rem;
+      grid-template-columns: repeat(2, 2fr);
+      justify-content: center;
+    }
+  
+    .objective {
+      padding: 0% 0% 9% 0%;
+    }
+  
+    .ul-objective {
+      padding: 0%;
+      margin: 0%;
+      text-align: start;
+      padding: 0% 0% 0% 20%;
+    }
+  
+    .ul-objective li {
+      list-style: none;
+      font-family: "Kanit", sans-serif;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    /* Fim da tela do section2 */
+  
+    /* Section3 configurar tela */
+  
+    #section3 {
+      box-sizing: border-box;
+      margin-bottom: 2rem;
+    }
+  
+    #section3 h2 {
+      margin: -1rem 0rem 0rem 4.4rem;
+      padding: 0 3rem;
+    }
+  
+    #section3 p {
+      width: 100%;
+      height: auto;
+      padding: 6.4%;
+      margin: 0%;
+      font-size: 1.1em;
+      border-radius: 0.53em;
+    }
+  
+    #teacher {
+      padding: 0%;
+      margin: 0%;
+      right: 0%;
+    }
+  
+    .png-footer {
+      width: 58%;
+      height: auto;
+      margin: 0%;
+      display: none;
+    }
+  
+    .button-footer {
+      margin-bottom: 2rem;
+    }
+  
+    /* fim da tela section2 */
+  }
+  
+  @media screen and (max-width: 375px) {
+    #section3 h2 {
+      margin: -1rem 0rem 0rem 2.4rem;
+    }
+    #section3 p {
+      padding: 10%;
+    }
+  }
+  /* fim da tela  */
+  
+  /* ajustes finais */
